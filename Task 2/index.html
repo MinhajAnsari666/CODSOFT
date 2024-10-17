@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MobileVibe | The Best Mobile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MobileVibe</div>
+        <ul class="navlinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#signup" class="btn-signup">Sign Up</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="overlay"></div>
+      <div class="home-content">
+        <h1>Welcome to MobileVibe</h1>
+        <p>Your go-to source for cutting-edge mobile designs.</p>
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for mobile solutions..."
+          />
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>About MobileVibe</h2>
+          <p>
+            MobileVibe is dedicated to providing the best mobile-first designs
+            that enhance user experiences and drive engagement. Our mission is
+            to deliver high-quality, responsive, and visually appealing
+            solutions tailored to your needs.
+          </p>
+          <ul class="info-list">
+            <li>Responsive Design</li>
+            <li>UI/UX Optimization</li>
+            <li>Custom Mobile Solutions</li>
+            <li>24/7 Support</li>
+          </ul>
+          <button class="read-more-btn">Read More</button>
+        </div>
+        <div class="about-image">
+          <img src="./Images/img2.jpg" height="200px" alt="About MobileVibe" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="services-container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card">
+            <i class="ri-phone-line service-icon"></i>
+            <h3>Responsive Design</h3>
+            <p>Creating mobile-first designs that look great on any device.</p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card">
+            <i class="ri-brush-line service-icon"></i>
+            <h3>UI/UX Optimization</h3>
+            <p>
+              Designing intuitive user interfaces and engaging user experiences.
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card">
+            <i class="ri-code-line service-icon"></i>
+            <h3>Web Development</h3>
+            <p>
+              Building robust and scalable web applications tailored to your
+              needs.
+            </p>
+          </div>
+
+          <!-- Add more service cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Enter subject"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Connect with us for enquiries and business</p>
+          <div class="social-icons">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+            <a href="https://wa.me/7066"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h4>India</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            quidem fugiat consequatur veniam delectus, incidunt cum. Fuga neque
+            repellendus possimus.
+          </p>
+          <a href="">MobileVibe@gmail.com</a>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>MobileVibe | ©2024. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navlinks = document.querySelector(".navlinks");
+
+      hamburger.addEventListener("click", () => {
+        navlinks.classList.toggle("open");
+
+        hamburger.innerHTML = navlinks.classList.contains("open")
+          ? '<i class="ri-close-line"></i>'
+          : '<i class="ri-menu-line"></i>';
+      });
+    </script>
+  </body>
+</html>
